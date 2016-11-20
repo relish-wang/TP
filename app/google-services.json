@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "386049909369",
+    "firebase_url": "https://town-portal-aa858.firebaseio.com",
+    "project_id": "town-portal-aa858",
+    "storage_bucket": "town-portal-aa858.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386049909369:android:df8d4aa7727bc3cb",
+        "android_client_info": {
+          "package_name": "cn.studyjamscn.s1.sj120.r3lish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386049909369-lg424kcio2us9cqknr7blsqqr03t37t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8wga4Bpye5-tBuuaApHXT95tHvc997ew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aty_bg_color">
+
+
+    <TableLayout
+        android:id="@+id/tlPersonalData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:shrinkColumns="1"
+        android:stretchColumns="1">
+
+        <TableRow android:id="@+id/trHead" android:background="@drawable/back">
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:text="头像："
+                android:textColor="@color/et_unfocus_color" />
+
+            <ImageView
+                android:id="@+id/ivHead"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="end"
+                android:src="@mipmap/logo" />
+
+
+        </TableRow>
+
+        <include layout="@layout/include_line" />
+
+        <TableRow android:id="@+id/trName" android:background="@drawable/back">
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:text="用户名："
+                android:textColor="@color/et_unfocus_color" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:text="zhangsan"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+        <include layout="@layout/include_line" />
+
+        <TableRow android:id="@+id/trRealName" android:background="@drawable/back">
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:text="真实姓名："
+                android:textColor="@color/et_unfocus_color" />
+
+
+            <TextView
+                android:id="@+id/tvRealName"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:text="王绿源"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+        <include layout="@layout/include_line" />
+
+        <TableRow android:id="@+id/trAddress" android:background="@drawable/back">
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:text="收货地址："
+                android:textColor="@color/et_unfocus_color" />
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:text="20号楼409室"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+        <include layout="@layout/include_line" />
+
+    </TableLayout>
+
+
+</RelativeLayout>
