@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2dp"
+    android:clickable="true"
+    app:cardCornerRadius="5dp"
+    app:elevation="1dp">
+
+    <RelativeLayout
+        android:id="@+id/base_swipe_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="Relish"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvUserA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="12345678910"
+                android:drawableRight="@mipmap/tel"
+                android:drawableEnd="@mipmap/tel"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTimeGet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="下午3点前"
+                android:textColor="@color/deep_orange"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAddressFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="星火书店"
+                android:textColor="@color/deep_orange"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTimeSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="下午4点"
+                android:textColor="@color/deep_blue"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAddressTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="20号楼409室"
+                android:textColor="@color/deep_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:padding="5dp"
+                android:text="其他隐私信息,需在接单后才能显示。"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/rlCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTextCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:padding="5dp"
+                    android:text="打赏热心值："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="end|bottom"
+                    android:padding="5dp"
+                    android:text="6"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMoreDetails"
+            style="@style/SmallTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/took_order_style"
+            android:text="详情"
+            android:textColor="@color/gray" />
+
+
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@id/tvMoreDetails"
+            android:layout_alignRight="@id/tvMoreDetails"
+            android:contentDescription="@string/pic"
+            android:src="@mipmap/logo" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

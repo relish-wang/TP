@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_page"
+            android:icon="@mipmap/ic_menu_homepage"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_issue"
+            android:icon="@mipmap/ic_menu_post"
+            android:title="我发的单" />
+        <item
+            android:id="@+id/nav_take"
+            android:icon="@mipmap/ic_menu_take"
+            android:title="我接的单" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_menu_about"
+            android:title="关于" />
+    </group>
+</menu>

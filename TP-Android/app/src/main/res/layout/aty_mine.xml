@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/aty_bg_color">
+
+    <RelativeLayout
+        android:id="@+id/rlActionBarContent"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/et_unfocus_color">
+
+        <RelativeLayout
+            android:id="@+id/rlBack"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@drawable/back">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/back"
+                android:src="@mipmap/back_normal" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/rlBack"
+            android:layout_toRightOf="@id/rlBack"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="个人中心"
+            android:textColor="#FFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvTitle"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlP"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/rlActionBarContent"
+        android:background="@color/et_unfocus_color">
+
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="32dp"
+            android:src="@mipmap/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivHead"
+            android:layout_alignTop="@id/ivHead"
+            android:layout_toEndOf="@id/ivHead"
+            android:layout_toRightOf="@id/ivHead"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/SimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/et_unfocus_color"
+                android:gravity="center_vertical"
+                android:text="用户名"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSignature"
+                style="@style/SimpleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/et_unfocus_color"
+                android:gravity="center_vertical"
+                android:text="这是我的个人签名"
+                android:textColor="#FFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:id="@+id/tlPersonalData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlP"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:shrinkColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="手机："
+                android:textColor="@color/et_unfocus_color" />
+
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13588015042"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="真实姓名："
+                android:textColor="@color/et_unfocus_color" />
+
+
+            <TextView
+                android:id="@+id/tvRealName"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王绿源"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="收货地址："
+                android:textColor="@color/et_unfocus_color" />
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20号楼409室"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/SmallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="热心值："
+                android:textColor="@color/et_unfocus_color" />
+
+            <TextView
+                android:id="@+id/tvWarmHeartedValue"
+                style="@style/SmallTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="112"
+                android:textColor="@color/et_unfocus_color" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tlPersonalData"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnModify"
+            style="@style/LightBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="修改资料"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/DeepBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_toEndOf="@id/btnModify"
+            android:layout_toRightOf="@id/btnModify"
+            android:text="注    销"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
